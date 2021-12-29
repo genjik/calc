@@ -1,9 +1,15 @@
-# Scientific calculator that is capable of solving derivatives and integrals.
+# Scientific calculator
 
-## Steps to run on your machine:
+#### Steps to run on your machine:
 1)
+2)
+3)
+4)
 
-## Screenshots:
+#### Screenshots:
 
 ![](1.png)
+
+<hr>
+
 ![](2.png)
