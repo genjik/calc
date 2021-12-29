@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head>
+    <title>Derivatives calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css"/>
+
+    <script src="/static/mathjax-config.js" defer></script>
+    <script type="text/javascript" id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+    <script src="/static/func.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>CALCU<span>lus</span>LATOR</h1>
+    </header>
+
+    <main>
+        <div class="calc">
+            <div class="chat" id="chat">
+                <!--<div class="request">
+                    <div class="req-inner">4 * 2</div>
+                </div>
+
+                <div class="response">
+                    <div class="res-inner">4 * 2 = 8 </div>
+                </div> -->
+            </div>
+
+            <div class="display" id="target"></div>
+
+            <div class="buttons">
+                <div class="buttons-col-4">
+                    <div class="button-frame"><div onclick="insert(1);" class="button">1</div></div>
+                    <div class="button-frame"><div onclick="insert(2);" class="button">2</div></div>
+                    <div class="button-frame"><div onclick="insert(3);" class="button">3</div></div>
+
+                    <div class="button-frame"><div onclick="insert(4);" class="button">4</div></div>
+                    <div class="button-frame"><div onclick="insert(5);" class="button">5</div></div>
+                    <div class="button-frame"><div onclick="insert(6);" class="button">6</div></div>
+
+                    <div class="button-frame"><div onclick="insert(7);" class="button">7</div></div>
+                    <div class="button-frame"><div onclick="insert(8);" class="button">8</div></div>
+                    <div class="button-frame"><div onclick="insert(9);" class="button">9</div></div>
+
+                    <div class="button-frame"><div onclick="dot();" class="button">.</div></div>
+                    <div class="button-frame"><div onclick="insert(0);" class="button">0</div></div>
+                    <div class="button-frame"><div onclick="compare('=');" class="button">=</div></div>
+                </div>
+
+                <div class="buttons-col-4">
+                    <div class="button-frame"><div onclick="divide();" class="button">/</div></div>
+                    <div class="button-frame"><div onclick="multiply()" class="button">*</div></div>
+                    <div class="button-frame"><div onclick="addFunc('sqrt');" class="button">&#8730;</div></div> <!-- TEX-->
+
+                    <div class="button-frame"><div onclick="subtract();" class="button">-</div></div>
+                    <div class="button-frame"><div onclick="add();" class="button">+</div></div>
+                    <div class="button-frame"><div onclick="addFunc('^');" class="button">^</div></div> <!-- TEX-->
+
+                    <div class="button-frame"><div onclick="addP('(');" class="button">(</div></div>
+                    <div class="button-frame"><div onclick="addP(')');" class="button">)</div></div>
+                    <div class="button-frame"><div onclick="compare('<');" class="button"><</div></div>
+
+                    <div class="button-frame"><div onclick="compare('<=');" class="button">&leq;</div></div>
+                    <div class="button-frame"><div onclick="compare('>=');" class="button">&geq;</div></div>
+                    <div class="button-frame"><div onclick="compare('>');" class="button">></div></div>
+                </div>
+
+                <div class="buttons-col-4">
+                    <div class="button-frame"><div onclick="addFunc('sin');" class="button">sin</div></div>
+                    <div class="button-frame"><div onclick="addFunc('cos');" class="button">cos</div></div>
+                    <div class="button-frame"><div onclick="addFunc('tan');" class="button">tan</div></div>
+
+                    <div class="button-frame"><div onclick="addFunc('csc');" class="button">csc</div></div>
+                    <div class="button-frame"><div onclick="addFunc('sec');" class="button">sec</div></div>
+                    <div class="button-frame"><div onclick="addFunc('cot');" class="button">cot</div></div>
+
+                    <div class="button-frame"><div onclick="addFunc('log');" class="button">log</div></div>
+                    <div class="button-frame"><div onclick="addFunc('ln');" class="button">ln</div></div>
+                    <div class="button-frame"><div onclick="addFunc('d/dx');" class="button">d/dx</div></div>
+
+                    <div class="button-frame"><div onclick="insert('\\pi');" class="button">`pi`</div></div> <!-- TEX-->
+                    <div class="button-frame"><div onclick="insert('e');" class="button">e</div></div>
+                    <div class="button-frame"><div onclick="insert('x');" class="button">x</div></div>
+                </div>
+
+                <div class="buttons-col-4 special-buttons">
+                    <div class="button-frame"><div onclick="calc();" class="button">calculate</div></div>
+                    <div class="button-frame"><div onclick="removeAll();" class="button">clear</div></div>
+                    <div class="button-frame moveLeft"><div onclick="addFunc('int');" class="button">&#8747;</div></div>
+                    <div class="button-frame moveRight"><div onclick="removePrev();" class="button">remove</div></div>
+                    <div class="button-frame moveLeft"><div onclick="moveLeft();" class="button">&larr;</div></div>
+                    <div class="button-frame moveRight"><div onclick="moveRight();" class="button">&rarr;</div></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
